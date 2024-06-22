@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    box-shadow: 1px 0px 50px -15px black;
+    top: 0;
+    z-index: 1;
+}
+.navbar .title{
+    margin-left: 40px;
+}
+.navbar .quicklinks ul{
+    display: flex;
+    list-style: none;
+}
+.navbar .quicklinks ul li{
+    margin-right: 40px;
+}
+.navbar .quicklinks ul li a{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+.navbar .quicklinks ul li:hover{
+    scale: 1.1;
+    transition: ease 0.3s;
+}
+.navbar .quicklinks ul li a:hover{
+    border-bottom: 2px solid black;
+    transition: ease 0.3s;
+}
+
+.header{
+    height: 100dvh;
+}
+.header .bg{
+    height: 108.3dvh;
+    width: 50dvw;
+    background-color: cadetblue;
+    filter: opacity(35%);
+    position: absolute;
+    top: 0;
+}
+.header .first{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header .first h3{
+    font-size: x-large;
+    color: blue;
+}
+.header .first h1{
+    font-size: 55px;
+}
+.header .first h2{
+    font-size: 25px;
+}
+.header .first h2 a{
+    text-decoration: none;
+    cursor: text;
+    color: blue;
+}
+
+.aboutme{
+    display: flex;
+    margin: 0 50px;
+    justify-content: space-around;
+}
+.aboutme .image img{
+    width: 450px;
+    margin: 20px 80px 20px 100px;
+}
+.aboutme .details{
+    padding: 50px;
+    width: 550px;
+}
+.aboutme .details h1{
+    font-size: 40px;
+    margin: 25px 0;
+}
+.aboutme .details #detail{
+    margin: 20px 0;
+}
+.aboutme .details .box{
+    display: flex;
+}
+.aboutme .details .box .left ul li{
+    font-size: large;
+    font-weight: bold;
+    list-style: none;
+    margin: 30px 0;
+}
+.aboutme .details .box .right{
+    margin-left: 17px;
+}
+.aboutme .details .box .right ul li{
+    font-size: large;
+    list-style: none;
+    margin: 30px 0;
+}
+
+.skills{
+    padding: 50px;
+}
+.skills h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills .skill-list{
+    display: flex;
+    justify-content: space-around;
+}
+.skills .skill-list .one{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right, #0070BA, #E44D26, #63A814);
+}
+.skills .skill-list .one img{
+    height: 100px;
+    width: 140px;
+}
+.skills .skill-list .two{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 5px solid #563B7E;
+}
+.skills .skill-list .two img{
+    height: 85px;
+}
+.skills .skill-list .three{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to right, #E44D26, #0070BA, #1F794B);
+}
+.skills .skill-list .three img{
+    height: 100px;
+    width: 140px;
+}
+.skills .skill-list .four{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom, #00C4CD, #7B24EB);
+}
+.skills .skill-list .four img{
+    height: 85px;
+}
+
+.projects{
+    width: 100%;
+}
+.projects h1{
+    font-size: 50px;
+    margin: 10px 0 30px 50px;
+}
+.projects #prjct{
+    margin: 10px 0 30px 50px;
+    color: gray;
+}
+.projects .amazon img{
+    height: 380px;
+}
+.projects .amazon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.projects .amazon .top-az{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 15px;
+}
+.projects .amazon .middle-az{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 15px;
+}
+.projects .amazon .ftr-az{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 15px;
+}
+
+.projects .instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.projects .instagram .igbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.projects .instagram .signup-ig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+}
+.projects .instagram .login-ig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+}
+.projects .netflix img{
+    height: 380px;
+}
+.projects .netflix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.projects .netflix .login-netflix{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 15px;
+}
+.projects .netflix .ftr-netflix{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    gap: 15px;
+}
+.projects .weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.projects .weather img{
+    height: 450px;
+}
+.projects .weather .wthr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.projects .weather .wthr-dflt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
+.projects .weather .wethr-dtls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: x-large;
+}
+
+.resume{
+    padding: 50px;
+}
+.resume h1{
+    font-size: 50px;
+}
+.resume .download img{
+    height: 500px;
+}
+.resume .download{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.resume .download button{
+    height: 50px;
+    width: 250px;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.resume .download button a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 70px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.resume .download button a:hover{
+    color: white;
+    background-color: black;
+}
+.contact{
+    padding: 50px;
+}
+.contact h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.contact img{
+    height: 100px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+.contact .firstcntct{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .scndcntct{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
+}
+.contact .scndcntct .lctn img{
+    height: 150px;
+}
+.contact .scndcntct .lctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .scndcntct .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    height: 300px;
+    padding: 50px;
+    background-color: black;
+    color: #838383;
+}
+.footer .ftr-box{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .about{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer .about #insta{
+    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background-clip: text;
+    color: transparent;
+}
+.footer .about #x{
+    color: gray;
+}
+.footer .about #fb{
+    color: #0866FF;
+}
+.footer .about #linkdln{
+    color: #0C64C5;
+}
+.footer .about i{
+    font-size: xx-large;
+    margin-right: 15px;
+}
+.footer .copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+.footer .quicklinks ul{
+    list-style: none;
+}
+.footer .quicklinks ul a{
+    text-decoration: none;
+    color: #838383;
+}
+.footer .quicklinks ul li{
+    margin: 10px 0;
+}
+.footer .quicklinks ul li i{
+    margin-right: 5px;
+}
+.footer .contct .cntct{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 800px){
+    .aboutme{
+        flex-direction: column;
+    }
+
+    .projects .amazon img{
+        height: 300px;
+    }
+    .projects .amazon .top-az{
+        flex-direction: column;
+    }
+    .projects .amazon .middle-az{
+        flex-direction: column;
+    }
+    .projects .amazon .ftr-az{
+        flex-direction: column;
+    }
+
+    .projects .instagram .igbox{
+        flex-direction: column;
+    }
+
+    .projects .netflix img{
+        height: 300px;
+    }
+    .projects .netflix .login-netflix{
+        flex-direction: column;
+    }
+    .projects .netflix .ftr-netflix{
+        flex-direction: column;
+    }
+
+    .projects .weather .wthr{
+        flex-direction: column;
+    }
+}
